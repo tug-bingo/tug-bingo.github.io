@@ -1,0 +1,89 @@
+table {
+  width: 700px;
+  table-layout: fixed;
+}
+tr {
+  
+  height: 120px;
+}
+td {
+  border-radius: 8px;
+  text-align: center;
+  color: #ae0f00;
+  font-size: 16px;
+  font-weight:400;
+  font-family: Calibri;
+  width: 100px;
+  cursor: pointer;
+  background-color: #e8dfcf;
+}
+td:hover {
+  font-weight: 800;
+  color: #ae0f00;
+}
+td.center-spot {
+  background-color: #ae0f00;
+  background-image: url("mslogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: default;
+  font-weight: 800;
+}
+td.center-spot:hover {
+  font-weight: 600;
+}
+td.selected {
+  background-color: #ae0f00;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+table.suggestions {
+  width: auto;
+}
+tr.suggestions {
+  height: auto;
+}
+td.suggestions {
+  width: auto;
+  background-color: white;
+  font-weight: normal;
+  cursor: default;
+}
+body, html {
+  height: 100%;
+}
+.footer {
+}
+
+.imagebanner {
+  background-image: url("banner.png");
+  height: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+button {
+  background-color: #ae0f00;
+  color: black;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 30px;
+}
+button:hover {
+  background-color: #000000;
+  color: #ae0f00;
+  font-weight: 600;
+}
+button:disabled, button[disabled]{
+  background-color: #ae0f00;
+  color: black;
+  font-weight: 600;
+  cursor: default;
+}
