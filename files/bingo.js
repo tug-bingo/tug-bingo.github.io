@@ -18,7 +18,7 @@ function shuffle(array) {
 
 function clear_all(){
     clear_button.disabled=true;
-
+  
     for(var i = 0; i < cells.length; i++)
 	if(i != 12)
 	    cells[i].className='';
