@@ -26,7 +26,8 @@ function clear_all(){
 }
 
 function bingo_phrase() {
-    alert('BINGO!!!');
+    //alert('BINGO!!!');
+	modal.style.display = "block";
 }
 
 function bingo_check_diagonal_backslash(cell) {
@@ -76,6 +77,19 @@ function is_bingo() {
 }
 
 function make_card(){
+	// Code to make bingo alert modal window message
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+
     clear_all();
     var shuffled_values = shuffle(values);
     for(var i = 0; i < cells.length; i++) {
@@ -101,7 +115,12 @@ function make_card(){
 }
 
 window.onload = function() {
+	// Get the modal
+	modal = document.getElementById("myModal");
+	// Get the <span> element that closes the modal
+	span = document.getElementsByClassName("close")[0];
+	
     cells = document.getElementsByTagName('td');
-    clear_button = document.getElementById('clear_all_button');
+    clear_button = document.getElementById('clear_all');
     make_card();
 }
