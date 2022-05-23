@@ -54,6 +54,13 @@ body, html {
   height: 100%;
 }
 .footer {
+    font-family: Calibri;
+    font-size: 20px;
+	color: #ae0f00;
+}
+a {
+  color: #ae0f00;
+  font-weight: bold;
 }
 
 .imagebanner {
